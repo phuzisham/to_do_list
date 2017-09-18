@@ -42,11 +42,11 @@ describe(Task) do
 
   describe(".sort") do
     it("sorts by name") do
-      list1 = Task.new({:description => "Zebra", :list_id => 1})
-      list2 = Task.new({:description => "Apple", :list_id => 1})
-      list1.save()
-      list2.save()
-      expect(Task.sort()).to(eq([list2, list1]))
+      task1 = Task.new({:description => "Zebra", :list_id => 1})
+      task2 = Task.new({:description => "Apple", :list_id => 1})
+      task1.save()
+      task2.save()
+      expect(Task.sort()).to(eq([task2, task1]))
     end
   end
 end
