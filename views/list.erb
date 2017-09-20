@@ -12,6 +12,8 @@
   <% else %>
     <p>There are no tasks on this list!</p>
   <% end %>
+  <p><a href="/lists/<%= @list.id() %>/edit">Edit <%= @list.name() %> list</a></p>
+  <p><a href="/">Return to Main Page</a></p>
 
 <div class="container">
   <a href="/"><button class="btn">Home</a>
